@@ -1,0 +1,99 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - GrpcGreeterClient</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+    <link rel="stylesheet" href="~/css/site.css" />
+
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.29.1/moment.min.js" integrity="sha512-qTXRIMyZIFb8iQcfjXWCO8+M5Tbc38Qi5WzdPOYZHIlZpzBHG3L3by84BBBOiRGiEb7KKtAOAs5qYdUiZiQNNQ==" crossorigin="anonymous"></script>
+
+    <script src="https://www.emos.id/webmosly/plugins/datatables/jquery.dataTables.min.js"></script>
+    <script src="https://www.emos.id/webmosly/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <link rel="stylesheet" href="https://www.emos.id/webmosly/plugins/datatables-bs4/css/dataTables.bootstrap4.css">
+    <style>
+        .loading-bar {
+            display: inline-block;
+            min-width: 4px;
+            min-height: 25px;
+            border-radius: 4px;
+            animation: loading 1s ease-in-out infinite;
+            margin-bottom: 25px;
+        }
+
+            .loading-bar:nth-child(1) {
+                background-color: #02f97c;
+                animation-delay: 0;
+            }
+
+            .loading-bar:nth-child(2) {
+                background-color: #02c562;
+                animation-delay: 0.09s;
+            }
+
+            .loading-bar:nth-child(3) {
+                background-color: #008c45;
+                animation-delay: .18s;
+            }
+
+            .loading-bar:nth-child(4) {
+                background-color: #02f97c;
+                animation-delay: .27s;
+            }
+
+            .loading-bar:nth-child(5) {
+                background-color: #02c562;
+                animation-delay: .36s;
+            }
+
+            .loading-bar:nth-child(6) {
+                background-color: #008c45;
+                animation-delay: .45s;
+            }
+
+        @@keyframes loading {
+            0% {
+                transform: scale(1);
+            }
+
+            20% {
+                transform: scale(1, 2.2);
+            }
+
+            40% {
+                transform: scale(1);
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-dark bg-dark border-bottom box-shadow mb-3">
+            <div class="container">
+                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">GrpcGreeterClient</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+    <div class="container">
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+    </div>
+
+    <footer class="border-top footer text-muted">
+        <div class="container">
+            &copy; 2020 - GrpcGreeterClient - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+        </div>
+    </footer>
+    @RenderSection("Scripts", required: false)
+</body>
+</html>
