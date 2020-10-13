@@ -14,7 +14,10 @@ namespace GrpcGreeterClient.Models
         {
             List<Mahasiswa> Res = new List<Mahasiswa>();
 
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            AppContext.SetSwitch(
+                "System.Net.Http.SocketsHttpHandler.Http2UnencryptedSupport", true);
+
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
             var reply = client.GetListMahasiswa(new empty {});
 
@@ -29,7 +32,7 @@ namespace GrpcGreeterClient.Models
         {
             Mahasiswa Res = new Mahasiswa();
 
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
             ID id = new ID();
             id.Id = nim;
@@ -43,7 +46,7 @@ namespace GrpcGreeterClient.Models
         {
             string Res = "1~General Error";
 
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
             Mahasiswa mhs = mahasiswa;
             var reply = client.InsertMahasiswa(mhs);
@@ -56,7 +59,7 @@ namespace GrpcGreeterClient.Models
         {
             string Res = "1~General Error";
 
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
             Mahasiswa mhs = mahasiswa;
             var reply = client.EditMahasiswa(mhs);
@@ -69,7 +72,7 @@ namespace GrpcGreeterClient.Models
         {
             string Res = "1~General Error";
 
-            using var channel = GrpcChannel.ForAddress("https://localhost:5001");
+            using var channel = GrpcChannel.ForAddress("http://localhost:5001");
             var client = new Greeter.GreeterClient(channel);
             ID id = new ID();
             id.Id = nim;

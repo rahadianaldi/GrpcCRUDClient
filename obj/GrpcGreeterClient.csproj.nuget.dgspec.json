@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\rahad\\source\\repos\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {}
+    "D:\\Kuliah & Kerja\\Semester 7\\EAI\\Tugas M5\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {}
   },
   "projects": {
-    "C:\\Users\\rahad\\source\\repos\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {
+    "D:\\Kuliah & Kerja\\Semester 7\\EAI\\Tugas M5\\GrpcGreeterClient\\GrpcGreeterClient.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\rahad\\source\\repos\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+        "projectUniqueName": "D:\\Kuliah & Kerja\\Semester 7\\EAI\\Tugas M5\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
         "projectName": "GrpcGreeterClient",
-        "projectPath": "C:\\Users\\rahad\\source\\repos\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
+        "projectPath": "D:\\Kuliah & Kerja\\Semester 7\\EAI\\Tugas M5\\GrpcGreeterClient\\GrpcGreeterClient.csproj",
         "packagesPath": "C:\\Users\\rahad\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\rahad\\source\\repos\\GrpcGreeterClient\\obj\\",
+        "outputPath": "D:\\Kuliah & Kerja\\Semester 7\\EAI\\Tugas M5\\GrpcGreeterClient\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\rahad\\AppData\\Roaming\\NuGet\\NuGet.Config",
